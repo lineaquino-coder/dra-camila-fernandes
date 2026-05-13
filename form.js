@@ -52,7 +52,6 @@ document.addEventListener('DOMContentLoaded', function () {
         await fetch(CONFIG.sheetsWebAppUrl, {
           method: 'POST',
           mode: 'no-cors',
-          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(dados),
         });
       }
