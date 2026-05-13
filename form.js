@@ -4,7 +4,7 @@ const CONFIG = {
     serviceId:  'SEU_SERVICE_ID_EMAILJS',
     templateId: 'SEU_TEMPLATE_ID_EMAILJS',
   },
-  sheetsWebAppUrl: 'SUA_URL_DO_APPS_SCRIPT',
+  sheetsWebAppUrl: 'https://script.google.com/macros/s/AKfycbwCw2fUE3VlryBoQ7TTh15hRbnVuxPDwHyuNFfzcCaODGDLv1vVG1hhoqtW6_-im0aS/exec',
   whatsapp: '5531996646079',
 };
 
