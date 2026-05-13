@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resultados | Dra. Camila Fernandes</title>
+  <meta name="description" content="Veja os resultados reais de pacientes da Dra. Camila Fernandes. Blefaroplastia e Laser CO2 em Belo Horizonte." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <style>
+    .results-intro {
+      text-align: center;
+      padding: 28px 20px 8px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .results-intro h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.2rem;
+      color: var(--gold-dark);
+      margin-bottom: 10px;
+    }
+    .results-intro p {
+      font-size: 0.9rem;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+    .results-grid {
+      max-width: 480px;
+      margin: 20px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .result-card {
+      background: var(--white);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 16px rgba(44,36,22,0.07);
+      border: 1px solid rgba(196,164,90,0.15);
+    }
+    .result-card-photos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .result-card-photos .photo-wrap {
+      position: relative;
+      aspect-ratio: 1;
+      overflow: hidden;
+      background: var(--beige);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .result-card-photos .photo-wrap img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+    .photo-label {
+      position: absolute;
+      bottom: 6px; left: 6px;
+      background: rgba(44,36,22,0.7);
+      color: white;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 10px;
+    }
+    .photo-placeholder-icon {
+      font-size: 3rem;
+      opacity: 0.3;
+    }
+    .result-card-info {
+      padding: 16px;
+    }
+    .result-tag {
+      display: inline-block;
+      background: var(--beige);
+      color: var(--gold-dark);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 8px;
+    }
+    .result-card-info p {
+      font-size: 0.85rem;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+    .result-cta {
+      display: block;
+      text-align: center;
+      margin-top: 12px;
+      color: var(--gold-dark);
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .add-photo-note {
+      background: var(--beige);
+      border: 1.5px dashed var(--gold);
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-light);
+      line-height: 1.5;
+      margin: 0 20px 20px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="top-nav">
+    <a href="index.html"><img class="logo-small" src="logo.png" alt="Dra. Camila Fernandes" /></a>
+    <a href="index.html" class="back-link">← Voltar</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-placeholder">📸</div>
+    <div class="hero-content">
+      <span class="hero-tag">Resultados Reais</span>
+      <h1>Antes e Depois</h1>
+      <span class="hero-subtitle">Transformações que falam por si</span>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <div class="results-intro">
+    <h2>Resultados que transformam</h2>
+    <p>Cada resultado é único. Conheça algumas das transformações realizadas pela Dra. Camila e veja como um procedimento pode devolver sua autoestima e bem-estar.</p>
+  </div>
+
+  <!-- NOTA PARA ADICIONAR FOTOS -->
+  <div class="add-photo-note">
+    📌 <strong>Adicione suas fotos de antes/depois aqui.</strong><br />
+    Salve as imagens na pasta <code>fotos/</code> e substitua os placeholders abaixo.
+  </div>
+
+  <!-- GALERIA DE RESULTADOS -->
+  <div class="results-grid">
+
+    <!-- Card 1: Blefaroplastia -->
+    <div class="result-card">
+      <div class="result-card-photos">
+        <div class="photo-wrap">
+          <!-- <img src="fotos/blefaro-antes-1.jpg" alt="Antes" /> -->
+          <span class="photo-placeholder-icon">👁️</span>
+          <span class="photo-label">Antes</span>
+        </div>
+        <div class="photo-wrap">
+          <!-- <img src="fotos/blefaro-depois-1.jpg" alt="Depois" /> -->
+          <span class="photo-placeholder-icon">✨</span>
+          <span class="photo-label">Depois</span>
+        </div>
+      </div>
+      <div class="result-card-info">
+        <span class="result-tag">Blefaroplastia</span>
+        <p>Remoção do excesso de pele palpebral. Olhar rejuvenescido e descansado, mantendo toda a naturalidade da expressão.</p>
+        <a href="#contato" class="result-cta">Quero um resultado como esse →</a>
+      </div>
+    </div>
+
+    <!-- Card 2: Laser CO2 -->
+    <div class="result-card">
+      <div class="result-card-photos">
+        <div class="photo-wrap">
+          <!-- <img src="fotos/laser-antes-1.jpg" alt="Antes" /> -->
+          <span class="photo-placeholder-icon">🌟</span>
+          <span class="photo-label">Antes</span>
+        </div>
+        <div class="photo-wrap">
+          <!-- <img src="fotos/laser-depois-1.jpg" alt="Depois" /> -->
+          <span class="photo-placeholder-icon">💫</span>
+          <span class="photo-label">Depois</span>
+        </div>
+      </div>
+      <div class="result-card-info">
+        <span class="result-tag">Laser CO2</span>
+        <p>Tratamento de manchas e rejuvenescimento com Laser CO2. Pele renovada, uniforme e com muito mais luminosidade.</p>
+        <a href="#contato" class="result-cta">Quero um resultado como esse →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FORMULÁRIO -->
+  <div class="form-section" id="contato">
+    <h2>Quero meu resultado</h2>
+    <p>Agende uma avaliação gratuita e descubra qual procedimento é ideal para você.</p>
+
+    <form id="leadForm">
+      <div class="form-group">
+        <label for="nome">Nome completo *</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+      </div>
+      <div class="form-group">
+        <label for="whatsapp">WhatsApp *</label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(31) 9 0000-0000" required />
+      </div>
+      <div class="form-group">
+        <label for="procedimento">Tenho interesse em *</label>
+        <select id="procedimento" name="procedimento" required>
+          <option value="" disabled selected>Selecione um procedimento</option>
+          <option value="Blefaroplastia">Blefaroplastia</option>
+          <option value="Laser CO2 — Rejuvenescimento">Laser CO2 — Rejuvenescimento</option>
+          <option value="Laser CO2 — Manchas">Laser CO2 — Manchas</option>
+          <option value="Avaliação Geral">Avaliação Geral</option>
+        </select>
+      </div>
+      <button type="submit" class="submit-btn" id="submitBtn">Quero minha avaliação gratuita →</button>
+      <p class="privacy-note">🔒 Seus dados são protegidos e não serão compartilhados.</p>
+    </form>
+
+    <div class="success-msg" id="successMsg">
+      <div class="check">✅</div>
+      <h3>Até logo!</h3>
+      <p>Você será redirecionada para o WhatsApp da Dra. Camila agora.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Dra. Camila Fernandes &bull; CRMMG 64521 &bull; RQE 51214</p>
+    <p>Belo Horizonte, Minas Gerais</p>
+    <p style="margin-top:8px;"><a href="https://www.instagram.com/dra_camila_fernandes/" target="_blank">@dra_camila_fernandes</a></p>
+  </footer>
+
+  <script src="form.js"></script>
+</body>
+</html>

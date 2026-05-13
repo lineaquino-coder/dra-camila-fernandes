@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laser CO2 | Dra. Camila Fernandes</title>
+  <meta name="description" content="Laser CO2 fracionado em Belo Horizonte. Rejuvenescimento da pele, redução de manchas e estímulo de colágeno. Agende sua avaliação gratuita." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="top-nav">
+    <a href="index.html"><img class="logo-small" src="logo.png" alt="Dra. Camila Fernandes" /></a>
+    <a href="index.html" class="back-link">← Voltar</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <!-- <img src="fotos/laser-co2-hero.jpg" alt="Laser CO2" /> -->
+    <div class="hero-placeholder">✨</div>
+    <div class="hero-content">
+      <span class="hero-tag">Estética</span>
+      <h1>Laser CO2</h1>
+      <span class="hero-subtitle">Renove sua pele, recupere sua confiança</span>
+    </div>
+  </div>
+
+  <!-- CONTEÚDO -->
+  <div class="content-section">
+
+    <h2>O que é o Laser CO2?</h2>
+    <p>O Laser CO2 fracionado é um dos tratamentos mais eficazes para rejuvenescimento da pele. Ele estimula a produção de colágeno e elastina, renovando camadas profundas da pele com resultados visíveis e duradouros.</p>
+
+    <h3>O que trata</h3>
+    <ul class="benefit-list">
+      <li>Rugas finas e linhas de expressão</li>
+      <li>Manchas e melasma</li>
+      <li>Flacidez leve a moderada da pele</li>
+      <li>Textura irregular e poros dilatados</li>
+      <li>Cicatrizes de acne</li>
+      <li>Envelhecimento geral da pele do rosto e pescoço</li>
+    </ul>
+
+    <div class="gold-divider"></div>
+
+    <h3>Como funciona</h3>
+    <p>O laser age em microcoluntas na pele, criando pequenas lesões controladas que ativam o mecanismo natural de reparação do organismo. O resultado é uma pele mais firme, uniforme e luminosa — sua pele renovada de dentro para fora.</p>
+
+    <h3>O que esperar do tratamento</h3>
+    <ul class="benefit-list">
+      <li>Sessão com duração de 30 a 60 minutos</li>
+      <li>Vermelhidão e descamação leve nos primeiros dias</li>
+      <li>Retorno às atividades em 5–7 dias</li>
+      <li>Resultados progressivos em 30 a 90 dias</li>
+      <li>Protocolo personalizado conforme o tipo de pele</li>
+    </ul>
+
+    <div class="gold-divider"></div>
+
+    <!-- <h3>Resultados</h3>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="fotos/laser-antes-1.jpg" alt="Antes" /></div>
+      <div class="gallery-item"><img src="fotos/laser-depois-1.jpg" alt="Depois" /></div>
+    </div> -->
+
+  </div>
+
+  <!-- FORMULÁRIO -->
+  <div class="form-section" id="contato">
+    <h2>Quero Saber Mais</h2>
+    <p>Avaliação gratuita e personalizada. Preencha abaixo e a equipe da Dra. Camila entrará em contato pelo WhatsApp.</p>
+
+    <form id="leadForm">
+      <div class="form-group">
+        <label for="nome">Nome completo *</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+      </div>
+      <div class="form-group">
+        <label for="whatsapp">WhatsApp *</label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(31) 9 0000-0000" required />
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" />
+      </div>
+      <div class="form-group">
+        <label for="procedimento">Principal interesse *</label>
+        <select id="procedimento" name="procedimento" required>
+          <option value="Laser CO2 — Rejuvenescimento" selected>Laser CO2 — Rejuvenescimento</option>
+          <option value="Laser CO2 — Manchas">Laser CO2 — Manchas</option>
+          <option value="Blefaroplastia">Blefaroplastia</option>
+          <option value="Avaliação Geral">Avaliação Geral</option>
+          <option value="Outro">Outro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="mensagem">O que mais te incomoda na sua pele?</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Ex: manchas, rugas, flacidez..."></textarea>
+      </div>
+      <button type="submit" class="submit-btn" id="submitBtn">Quero minha avaliação gratuita →</button>
+      <p class="privacy-note">🔒 Seus dados são protegidos e não serão compartilhados.</p>
+    </form>
+
+    <div class="success-msg" id="successMsg">
+      <div class="check">✅</div>
+      <h3>Até logo!</h3>
+      <p>Você será redirecionada para o WhatsApp da Dra. Camila agora.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Dra. Camila Fernandes &bull; CRMMG 64521 &bull; RQE 51214</p>
+    <p>Belo Horizonte, Minas Gerais</p>
+    <p style="margin-top:8px;"><a href="https://www.instagram.com/dra_camila_fernandes/" target="_blank">@dra_camila_fernandes</a></p>
+  </footer>
+
+  <script src="form.js"></script>
+</body>
+</html>

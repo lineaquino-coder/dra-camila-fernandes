@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avaliação Gratuita | Dra. Camila Fernandes</title>
+  <meta name="description" content="Agende sua avaliação gratuita com a Dra. Camila Fernandes em Belo Horizonte. Blefaroplastia e Laser CO2." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <style>
+    .trust-section {
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 28px 20px 8px;
+    }
+    .trust-section h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2rem;
+      color: var(--gold-dark);
+      margin-bottom: 16px;
+    }
+    .trust-items {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+    .trust-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 16px;
+      background: var(--white);
+      border-radius: 10px;
+      border: 1px solid rgba(196,164,90,0.15);
+    }
+    .trust-icon {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .trust-item h4 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 4px;
+    }
+    .trust-item p {
+      font-size: 0.8rem;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+    .doctor-card {
+      max-width: 480px;
+      margin: 0 auto 8px;
+      padding: 0 20px;
+    }
+    .doctor-inner {
+      background: linear-gradient(135deg, #2e1f0a, #4a3010);
+      border-radius: 12px;
+      padding: 24px 20px;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    .doctor-avatar {
+      width: 72px; height: 72px;
+      border-radius: 50%;
+      border: 2px solid var(--gold);
+      flex-shrink: 0;
+      background: var(--gold-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+    /* <img> real: .doctor-avatar img { width:100%; height:100%; border-radius:50%; object-fit:cover; } */
+    .doctor-info h3 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+    .doctor-info p {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.6);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="top-nav">
+    <a href="index.html"><img class="logo-small" src="logo.png" alt="Dra. Camila Fernandes" /></a>
+    <a href="index.html" class="back-link">← Voltar</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-placeholder">🌸</div>
+    <div class="hero-content">
+      <span class="hero-tag">Gratuito & Sem compromisso</span>
+      <h1>Avaliação Gratuita</h1>
+      <span class="hero-subtitle">O primeiro passo para a sua transformação</span>
+    </div>
+  </div>
+
+  <!-- CARD DA MÉDICA -->
+  <div class="doctor-card" style="padding-top:28px;">
+    <div class="doctor-inner">
+      <div class="doctor-avatar">👩‍⚕️</div>
+      <!-- Para foto real: <div class="doctor-avatar"><img src="fotos/dra-camila.jpg" alt="Dra. Camila" /></div> -->
+      <div class="doctor-info">
+        <h3>Dra. Camila Fernandes</h3>
+        <p>Oftalmologista &bull; Plástica Ocular<br />CRM-MG 64521 &bull; RQE 51214<br />Professora · Membro SBCPO</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- BENEFÍCIOS DA AVALIAÇÃO -->
+  <div class="trust-section">
+    <h2>O que você vai receber</h2>
+    <div class="trust-items">
+      <div class="trust-item">
+        <span class="trust-icon">🎯</span>
+        <div>
+          <h4>Diagnóstico personalizado</h4>
+          <p>A Dra. Camila analisa seu caso individualmente e indica o procedimento mais adequado para você.</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">💬</span>
+        <div>
+          <h4>Todas as suas dúvidas respondidas</h4>
+          <p>Como funciona o procedimento, tempo de recuperação, resultados esperados — sem pressa e sem pressão.</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">🔒</span>
+        <div>
+          <h4>Sem compromisso</h4>
+          <p>A avaliação é 100% gratuita. Você decide se quer seguir em frente, no seu tempo.</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">📍</span>
+        <div>
+          <h4>Atendimento em Belo Horizonte</h4>
+          <p>Consultas presenciais em local seguro e acolhedor. Endereço confirmado pelo WhatsApp após agendamento.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FORMULÁRIO -->
+  <div class="form-section" id="contato">
+    <h2>Agende agora</h2>
+    <p>Preencha abaixo e nossa equipe entrará em contato pelo WhatsApp para confirmar sua avaliação.</p>
+
+    <form id="leadForm">
+      <div class="form-group">
+        <label for="nome">Nome completo *</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+      </div>
+      <div class="form-group">
+        <label for="whatsapp">WhatsApp *</label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(31) 9 0000-0000" required />
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" />
+      </div>
+      <div class="form-group">
+        <label for="procedimento">Tenho interesse em *</label>
+        <select id="procedimento" name="procedimento" required>
+          <option value="Avaliação Gratuita" selected>Avaliação Gratuita (geral)</option>
+          <option value="Blefaroplastia">Blefaroplastia</option>
+          <option value="Laser CO2 — Rejuvenescimento">Laser CO2 — Rejuvenescimento</option>
+          <option value="Laser CO2 — Manchas">Laser CO2 — Manchas</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="mensagem">O que você gostaria de melhorar?</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre sua necessidade..."></textarea>
+      </div>
+      <button type="submit" class="submit-btn" id="submitBtn">Quero minha avaliação gratuita →</button>
+      <p class="privacy-note">🔒 Seus dados são protegidos e não serão compartilhados com terceiros.</p>
+    </form>
+
+    <div class="success-msg" id="successMsg">
+      <div class="check">✅</div>
+      <h3>Até logo!</h3>
+      <p>Você será redirecionada para o WhatsApp da Dra. Camila agora. Nos vemos em breve!</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Dra. Camila Fernandes &bull; CRMMG 64521 &bull; RQE 51214</p>
+    <p>Belo Horizonte, Minas Gerais</p>
+    <p style="margin-top:8px;"><a href="https://www.instagram.com/dra_camila_fernandes/" target="_blank">@dra_camila_fernandes</a></p>
+  </footer>
+
+  <script src="form.js"></script>
+</body>
+</html>

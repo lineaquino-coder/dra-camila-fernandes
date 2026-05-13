@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blefaroplastia | Dra. Camila Fernandes</title>
+  <meta name="description" content="Blefaroplastia estruturada em Belo Horizonte. Rejuvenescimento do olhar com precisão e naturalidade. Agende sua avaliação gratuita." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="top-nav">
+    <a href="index.html"><img class="logo-small" src="logo.png" alt="Dra. Camila Fernandes" /></a>
+    <a href="index.html" class="back-link">← Voltar</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="hero">
+    <!-- Substitua pelo caminho da foto real: <img src="fotos/blefaroplastia-hero.jpg" alt="Blefaroplastia" /> -->
+    <div class="hero-placeholder">👁️</div>
+    <div class="hero-content">
+      <span class="hero-tag">Cirurgia</span>
+      <h1>Blefaroplastia</h1>
+      <span class="hero-subtitle">O rejuvenescimento do seu olhar</span>
+    </div>
+  </div>
+
+  <!-- CONTEÚDO -->
+  <div class="content-section">
+
+    <h2>O que é a Blefaroplastia?</h2>
+    <p>A blefaroplastia é a cirurgia que remove o excesso de pele, gordura e músculo das pálpebras superiores e/ou inferiores. O resultado é um olhar mais jovem, descansado e expressivo — sem alterar a essência do seu rosto.</p>
+
+    <h3>Quem pode se beneficiar</h3>
+    <ul class="benefit-list">
+      <li>Pálpebras caídas que causam aspecto de cansaço</li>
+      <li>Bolsas sob os olhos persistentes</li>
+      <li>Excesso de pele que pesa sobre o olhar</li>
+      <li>Queda de sobrancelha associada à ptose palpebral</li>
+      <li>Desejo de rejuvenescimento natural e duradouro</li>
+    </ul>
+
+    <div class="gold-divider"></div>
+
+    <h3>Por que escolher a Dra. Camila</h3>
+    <p>Especialista em plástica ocular pela Fundação Hilton Rocha, professora do Centro Oftalmológico de MG e coordenadora do serviço de plástica do Hospital Evangélico. Cada cirurgia é planejada de forma individualizada, preservando sua naturalidade.</p>
+
+    <h3>Como é o procedimento</h3>
+    <ul class="benefit-list">
+      <li>Consulta de avaliação e planejamento personalizado</li>
+      <li>Cirurgia com anestesia local + sedação leve</li>
+      <li>Duração: 1 a 2 horas</li>
+      <li>Recuperação tranquila: retorno às atividades em 7–10 dias</li>
+      <li>Resultado definitivo e natural</li>
+    </ul>
+
+    <div class="gold-divider"></div>
+
+    <!-- Adicione fotos de antes/depois aqui -->
+    <!-- <h3>Resultados</h3>
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="fotos/blefaro-antes-1.jpg" alt="Antes" /></div>
+      <div class="gallery-item"><img src="fotos/blefaro-depois-1.jpg" alt="Depois" /></div>
+    </div> -->
+
+  </div>
+
+  <!-- FORMULÁRIO -->
+  <div class="form-section" id="contato">
+    <h2>Agende sua Avaliação</h2>
+    <p>Avaliação gratuita e sem compromisso. Preencha abaixo e entraremos em contato pelo WhatsApp.</p>
+
+    <form id="leadForm">
+      <div class="form-group">
+        <label for="nome">Nome completo *</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+      </div>
+      <div class="form-group">
+        <label for="whatsapp">WhatsApp *</label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="(31) 9 0000-0000" required />
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" />
+      </div>
+      <div class="form-group">
+        <label for="procedimento">Procedimento de interesse *</label>
+        <select id="procedimento" name="procedimento" required>
+          <option value="Blefaroplastia" selected>Blefaroplastia</option>
+          <option value="Laser CO2 — Rejuvenescimento">Laser CO2 — Rejuvenescimento</option>
+          <option value="Laser CO2 — Manchas">Laser CO2 — Manchas</option>
+          <option value="Avaliação Geral">Avaliação Geral</option>
+          <option value="Outro">Outro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="mensagem">Dúvidas ou observações</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre sua necessidade..."></textarea>
+      </div>
+      <button type="submit" class="submit-btn" id="submitBtn">Quero agendar minha avaliação →</button>
+      <p class="privacy-note">🔒 Seus dados são protegidos e não serão compartilhados.</p>
+    </form>
+
+    <div class="success-msg" id="successMsg">
+      <div class="check">✅</div>
+      <h3>Até logo!</h3>
+      <p>Você será redirecionada para o WhatsApp da Dra. Camila agora.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Dra. Camila Fernandes &bull; CRMMG 64521 &bull; RQE 51214</p>
+    <p>Belo Horizonte, Minas Gerais</p>
+    <p style="margin-top:8px;"><a href="https://www.instagram.com/dra_camila_fernandes/" target="_blank">@dra_camila_fernandes</a></p>
+  </footer>
+
+  <script src="form.js"></script>
+</body>
+</html>

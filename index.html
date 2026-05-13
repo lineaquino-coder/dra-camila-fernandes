@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dra. Camila Fernandes | Plástica Ocular — Belo Horizonte</title>
+  <meta name="description" content="Blefaroplastia estruturada e Laser CO2 em Belo Horizonte. Mais de 215 vidas transformadas desde 2014. Agende sua avaliação gratuita." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold: #C4A45A;
+      --gold-light: #D4B878;
+      --gold-dark: #A8873A;
+      --cream: #FAF7F2;
+      --beige: #F0EAD6;
+      --dark: #2C2416;
+      --gray: #5A5A5A;
+      --text: #4A3F2F;
+      --text-light: #7A6E5E;
+      --white: #FFFFFF;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Raleway', sans-serif;
+      background-color: var(--cream);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--beige);
+      padding: 28px 20px 20px;
+      border-bottom: 1px solid rgba(196,164,90,0.25);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .header-left {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .logo-img {
+      width: 100%;
+      max-width: 253px;
+      height: auto;
+      display: block;
+    }
+
+    .doctor-crm {
+      font-size: 0.64rem;
+      color: var(--text-light);
+      letter-spacing: 0.5px;
+      margin-top: 8px;
+      line-height: 1.6;
+    }
+
+    .doctor-photo-wrap {
+      width: 101px; height: 101px;
+      border-radius: 50%;
+      border: 3px solid var(--gold);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .doctor-photo-wrap img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .gold-divider {
+      width: 48px; height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+      margin: 16px auto 0;
+      max-width: 480px;
+    }
+
+    /* ── TAGLINE ── */
+    .tagline-section {
+      background: var(--white);
+      text-align: center;
+      padding: 20px 20px;
+      border-bottom: 1px solid rgba(196,164,90,0.12);
+    }
+
+    .tagline-section p {
+      font-size: 0.88rem;
+      color: var(--gray);
+      line-height: 1.75;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .tagline-section strong { color: var(--gold-dark); font-weight: 700; }
+
+    /* ── BOTÕES ── */
+    .links-section {
+      padding: 28px 20px 8px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .link-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 15px 24px;
+      margin-bottom: 11px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 600;
+      font-size: 0.92rem;
+      letter-spacing: 0.3px;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .link-btn-gold {
+      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+      color: var(--white);
+      box-shadow: 0 4px 14px rgba(196,164,90,0.35);
+    }
+
+    .link-btn-gold:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(196,164,90,0.45); }
+
+    .link-btn-outline {
+      background: var(--white);
+      color: var(--dark);
+      border: 1.5px solid rgba(196,164,90,0.5);
+    }
+
+    .link-btn-outline:hover { background: var(--beige); transform: translateY(-1px); }
+
+    .link-btn-whatsapp {
+      background: #25D366;
+      color: var(--white);
+      box-shadow: 0 4px 14px rgba(37,211,102,0.3);
+    }
+
+    .link-btn-whatsapp:hover { background: #1ebe5b; transform: translateY(-2px); }
+
+    .btn-icon { font-size: 1rem; flex-shrink: 0; }
+
+    /* ── INSTAGRAM CARD ── */
+    .insta-card {
+      margin: 8px 20px 4px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+      background: var(--white);
+      border-radius: 14px;
+      border: 1px solid #E0D8CC;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(44,36,22,0.07);
+    }
+
+    .insta-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 16px;
+      border-bottom: 1px solid #F0EAD6;
+    }
+
+    .insta-avatar {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      border: 2px solid var(--gold);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .insta-avatar img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+
+    .insta-info { flex: 1; }
+
+    .insta-handle {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--dark);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .insta-verified { color: #0095F6; font-size: 0.75rem; }
+
+    .insta-name {
+      font-size: 0.72rem;
+      color: var(--text-light);
+      margin-top: 2px;
+    }
+
+    .insta-follow-btn {
+      background: #0095F6;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 6px 14px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .insta-stats {
+      display: flex;
+      justify-content: space-around;
+      padding: 12px 16px;
+      border-bottom: 1px solid #F0EAD6;
+      text-align: center;
+    }
+
+    .insta-stat-num {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--dark);
+      display: block;
+    }
+
+    .insta-stat-label {
+      font-size: 0.68rem;
+      color: var(--text-light);
+    }
+
+    .insta-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .insta-post {
+      aspect-ratio: 1;
+      overflow: hidden;
+      background: var(--beige);
+    }
+
+    .insta-post img { width: 100%; height: 100%; object-fit: cover; }
+
+    .insta-post-placeholder {
+      width: 100%; height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.8rem;
+      opacity: 0.3;
+    }
+
+    .insta-footer {
+      padding: 12px 16px;
+      text-align: center;
+    }
+
+    .insta-footer a {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--gold-dark);
+      text-decoration: none;
+    }
+
+    /* ── MODAL OVERLAY ── */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(44,36,22,0.6);
+      z-index: 200;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .modal-overlay.active { display: flex; }
+
+    .modal-box {
+      background: var(--white);
+      border-radius: 20px 20px 0 0;
+      padding: 28px 20px 36px;
+      width: 100%;
+      max-width: 480px;
+      max-height: 92vh;
+      overflow-y: auto;
+      animation: slideUp 0.3s ease;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(100%); }
+      to   { transform: translateY(0); }
+    }
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 6px;
+    }
+
+    .modal-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    .modal-close {
+      background: none;
+      border: none;
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: var(--text-light);
+      line-height: 1;
+      padding: 4px;
+    }
+
+    .modal-subtitle {
+      font-size: 0.82rem;
+      color: var(--text-light);
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    /* ── FORMULÁRIO (modal + inline) ── */
+    .form-group { margin-bottom: 13px; }
+
+    .form-group label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 5px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1.5px solid #E8E0D0;
+      border-radius: 8px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.88rem;
+      color: var(--text);
+      background: var(--cream);
+      transition: border-color 0.2s;
+      outline: none;
+      -webkit-appearance: none;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--gold);
+      background: var(--white);
+    }
+
+    .form-group textarea { resize: vertical; min-height: 72px; }
+
+    .form-group select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23C4A45A' d='M1 1l5 5 5-5'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 40px;
+      cursor: pointer;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+      color: var(--white);
+      border: none;
+      border-radius: 8px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      margin-top: 6px;
+      box-shadow: 0 4px 14px rgba(196,164,90,0.35);
+    }
+
+    .submit-btn:hover { transform: translateY(-2px); }
+    .submit-btn:disabled { opacity: 0.7; cursor: not-allowed; transform: none; }
+
+    .privacy-note {
+      font-size: 0.7rem;
+      color: var(--text-light);
+      text-align: center;
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+
+    .success-msg {
+      display: none;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .success-msg .check { font-size: 2.8rem; margin-bottom: 10px; }
+
+    .success-msg h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 6px;
+    }
+
+    .success-msg p { font-size: 0.85rem; color: var(--text-light); }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 24px 20px;
+      border-top: 1px solid rgba(196,164,90,0.2);
+      background: var(--beige);
+      color: var(--text-light);
+      font-size: 0.72rem;
+      letter-spacing: 0.5px;
+      line-height: 2;
+    }
+
+    footer a { color: var(--gold-dark); text-decoration: none; }
+
+    @media (min-width: 480px) {
+      .links-section, .quote-card { margin-left: auto; margin-right: auto; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <div class="header-left">
+        <img class="logo-img" src="logo.png" alt="Dra. Camila Fernandes | Plástica Ocular" />
+        <p class="doctor-crm">CRM-MG 64521 &bull; RQE 51214<br />Belo Horizonte, MG</p>
+      </div>
+      <div class="doctor-photo-wrap">
+        <img src="camila1.jpg" alt="Dra. Camila Fernandes" />
+      </div>
+    </div>
+    <div class="gold-divider"></div>
+  </header>
+
+  <!-- TAGLINE -->
+  <div class="tagline-section">
+    <p>Blefaroplastia estruturada e Laser CO2 que transformam vidas através do resgate da autoestima — <strong>desde 2014</strong>. Mais de <strong>215 vidas transformadas</strong> e a sua pode ser a próxima.</p>
+  </div>
+
+  <!-- BOTÕES -->
+  <div class="links-section">
+
+    <a href="avaliacao.html" class="link-btn link-btn-gold">
+      <span class="btn-icon">✨</span> Quero minha avaliação gratuita
+    </a>
+
+    <a href="blefaroplastia.html" class="link-btn link-btn-outline">
+      <span class="btn-icon">👁️</span> Blefaroplastia — Rejuvenesça o olhar
+    </a>
+
+    <a href="laser-co2.html" class="link-btn link-btn-outline">
+      <span class="btn-icon">💫</span> Laser CO2 — Renove sua pele
+    </a>
+
+    <a href="antes-depois.html" class="link-btn link-btn-outline">
+      <span class="btn-icon">📸</span> Resultados reais — Antes e depois
+    </a>
+
+    <button onclick="abrirModal()" class="link-btn link-btn-whatsapp">
+      <span class="btn-icon">💬</span> Falar no WhatsApp
+    </button>
+
+  </div>
+
+  <!-- INSTAGRAM PREVIEW CARD -->
+  <div class="insta-card">
+    <div class="insta-header">
+      <div class="insta-avatar">
+        <img src="camila1.jpg" alt="@dra_camila_fernandes" />
+      </div>
+      <div class="insta-info">
+        <div class="insta-handle">
+          dra_camila_fernandes
+          <span class="insta-verified">✔</span>
+        </div>
+        <div class="insta-name">Dra. Camila Fernandes | Plástica Ocular</div>
+      </div>
+      <a href="https://www.instagram.com/dra_camila_fernandes/" target="_blank" class="insta-follow-btn">Seguir</a>
+    </div>
+
+    <div class="insta-stats">
+      <div>
+        <span class="insta-stat-num">375</span>
+        <span class="insta-stat-label">publicações</span>
+      </div>
+      <div>
+        <span class="insta-stat-num">7.001</span>
+        <span class="insta-stat-label">seguidores</span>
+      </div>
+      <div>
+        <span class="insta-stat-num">+215</span>
+        <span class="insta-stat-label">vidas transformadas</span>
+      </div>
+    </div>
+
+    <div class="insta-grid">
+      <!-- Substitua pelos thumbs reais dos posts: <div class="insta-post"><img src="fotos/post1.jpg" /></div> -->
+      <div class="insta-post"><div class="insta-post-placeholder">👁️</div></div>
+      <div class="insta-post"><div class="insta-post-placeholder">✨</div></div>
+      <div class="insta-post"><div class="insta-post-placeholder">💫</div></div>
+    </div>
+
+    <div class="insta-footer">
+      <a href="https://www.instagram.com/dra_camila_fernandes/" target="_blank">
+        Ver perfil completo no Instagram →
+      </a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Dra. Camila Fernandes &bull; CRMMG 64521 &bull; RQE 51214</p>
+    <p>Belo Horizonte, Minas Gerais</p>
+    <p><a href="https://www.instagram.com/dra_camila_fernandes/" target="_blank">@dra_camila_fernandes</a></p>
+  </footer>
+
+  <!-- MODAL WHATSAPP → FORM PRIMEIRO -->
+  <div class="modal-overlay" id="modalOverlay" onclick="fecharModalFora(event)">
+    <div class="modal-box">
+      <div class="modal-header">
+        <span class="modal-title">Antes de ir ao WhatsApp</span>
+        <button class="modal-close" onclick="fecharModal()">✕</button>
+      </div>
+      <p class="modal-subtitle">Deixe seu contato para garantirmos seu atendimento — só leva 30 segundos.</p>
+
+      <form id="leadForm">
+        <div class="form-group">
+          <label for="nome">Seu nome *</label>
+          <input type="text" id="nome" name="nome" placeholder="Como podemos te chamar?" required />
+        </div>
+        <div class="form-group">
+          <label for="whatsapp">Seu WhatsApp *</label>
+          <input type="tel" id="whatsapp" name="whatsapp" placeholder="(31) 9 0000-0000" required />
+        </div>
+        <div class="form-group">
+          <label for="procedimento">Tenho interesse em *</label>
+          <select id="procedimento" name="procedimento" required>
+            <option value="" disabled selected>Selecione um procedimento</option>
+            <option value="Blefaroplastia">Blefaroplastia</option>
+            <option value="Laser CO2 — Rejuvenescimento">Laser CO2 — Rejuvenescimento</option>
+            <option value="Laser CO2 — Manchas">Laser CO2 — Manchas</option>
+            <option value="Avaliação Gratuita">Avaliação Gratuita</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
+        <button type="submit" class="submit-btn" id="submitBtn">
+          Enviar e abrir WhatsApp →
+        </button>
+        <p class="privacy-note">🔒 Seus dados são protegidos. Não fazemos spam.</p>
+      </form>
+
+      <div class="success-msg" id="successMsg">
+        <div class="check">✅</div>
+        <h3>Abrindo o WhatsApp agora!</h3>
+        <p>A Dra. Camila vai entrar em contato em breve.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const CONFIG = {
+      emailjs: {
+        publicKey:  'SEU_PUBLIC_KEY_EMAILJS',
+        serviceId:  'SEU_SERVICE_ID_EMAILJS',
+        templateId: 'SEU_TEMPLATE_ID_EMAILJS',
+      },
+      sheetsWebAppUrl: 'SUA_URL_DO_APPS_SCRIPT',
+      whatsapp: '5531996646079',
+    };
+
+    if (CONFIG.emailjs.publicKey !== 'SEU_PUBLIC_KEY_EMAILJS') {
+      emailjs.init(CONFIG.emailjs.publicKey);
+    }
+
+    function abrirModal() {
+      document.getElementById('modalOverlay').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function fecharModal() {
+      document.getElementById('modalOverlay').classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function fecharModalFora(e) {
+      if (e.target === document.getElementById('modalOverlay')) fecharModal();
+    }
+
+    // Máscara telefone
+    document.getElementById('whatsapp').addEventListener('input', function(e) {
+      let v = e.target.value.replace(/\D/g, '').substring(0, 11);
+      if (v.length >= 7)      v = `(${v.substring(0,2)}) ${v.substring(2,7)}-${v.substring(7)}`;
+      else if (v.length >= 3) v = `(${v.substring(0,2)}) ${v.substring(2)}`;
+      else if (v.length >= 1) v = `(${v}`;
+      e.target.value = v;
+    });
+
+    document.getElementById('leadForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      btn.disabled = true;
+      btn.textContent = 'Enviando...';
+
+      const params = new URLSearchParams(window.location.search);
+      const dados = {
+        nome:         document.getElementById('nome').value.trim(),
+        whatsapp:     document.getElementById('whatsapp').value.trim(),
+        procedimento: document.getElementById('procedimento').value,
+        data:         new Date().toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' }),
+        utm_source:   params.get('utm_source')   || 'direto',
+        utm_medium:   params.get('utm_medium')   || '',
+        utm_campaign: params.get('utm_campaign') || '',
+        pagina:       'Home',
+      };
+
+      // Google Sheets
+      try {
+        if (CONFIG.sheetsWebAppUrl !== 'SUA_URL_DO_APPS_SCRIPT') {
+          await fetch(CONFIG.sheetsWebAppUrl, {
+            method: 'POST', mode: 'no-cors',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(dados),
+          });
+        }
+      } catch (err) { console.warn('Sheets:', err); }
+
+      // EmailJS
+      try {
+        if (CONFIG.emailjs.publicKey !== 'SEU_PUBLIC_KEY_EMAILJS') {
+          await emailjs.send(CONFIG.emailjs.serviceId, CONFIG.emailjs.templateId, {
+            from_name: dados.nome, phone: dados.whatsapp,
+            procedimento: dados.procedimento, data: dados.data,
+            utm_source: dados.utm_source, pagina: dados.pagina,
+          });
+        }
+      } catch (err) { console.warn('EmailJS:', err); }
+
+      const texto = encodeURIComponent(
+        `Olá, Dra. Camila! 👋\n\nMeu nome é ${dados.nome} e tenho interesse em: *${dados.procedimento}*.\n\nMeu WhatsApp: ${dados.whatsapp}`
+      );
+
+      document.getElementById('leadForm').style.display = 'none';
+      document.getElementById('successMsg').style.display = 'block';
+
+      setTimeout(() => {
+        window.open(`https://wa.me/${CONFIG.whatsapp}?text=${texto}`, '_blank');
+        setTimeout(fecharModal, 2000);
+      }, 1200);
+    });
+  </script>
+
+</body>
+</html>
