@@ -35,6 +35,8 @@ document.addEventListener('DOMContentLoaded', function () {
     btn.disabled = true;
     btn.textContent = 'Enviando...';
 
+    const urlParams = new URLSearchParams(window.location.search);
+
     const dados = {
       nome:         document.getElementById('nome').value.trim(),
       whatsapp:     document.getElementById('whatsapp').value.trim(),
@@ -44,6 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
       data:         new Date().toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' }),
       pagina:       document.title,
       origem:       document.referrer || 'Acesso direto',
+      utm_source:   urlParams.get('utm_source')   || '',
+      utm_medium:   urlParams.get('utm_medium')   || '',
+      utm_campaign: urlParams.get('utm_campaign') || '',
     };
 
     // 1. Google Sheets
