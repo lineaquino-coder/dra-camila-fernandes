@@ -2,15 +2,15 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --gold: #C4A45A;
-  --gold-light: #D4B878;
-  --gold-dark: #A8873A;
-  --cream: #FAF7F2;
-  --beige: #F0EAD6;
-  --dark: #2C2416;
-  --gray: #5A5A5A;
-  --text: #4A3F2F;
-  --text-light: #7A6E5E;
+  --gold: #B8965A;
+  --gold-light: #CBA96E;
+  --gold-dark: #9A7A3A;
+  --cream: #F8F8F7;
+  --beige: #EFEFED;
+  --dark: #222222;
+  --gray: #555555;
+  --text: #333333;
+  --text-light: #777777;
   --white: #FFFFFF;
 }
 
@@ -21,6 +21,11 @@ body {
   background-color: var(--cream);
   color: var(--text);
   min-height: 100vh;
+}
+
+/* ── LOGO FILTER — realça cinza, reduz amarelo ── */
+.logo-img, .logo-small {
+  filter: contrast(1.15) saturate(0.82) brightness(1.02);
 }
 
 /* ── NAV HEADER ── */
